@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ciaro\\source\\repos\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj": {}
+    "C:\\Users\\Poseidon\\Documents\\Projects\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ciaro\\source\\repos\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj": {
+    "C:\\Users\\Poseidon\\Documents\\Projects\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ciaro\\source\\repos\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj",
+        "projectUniqueName": "C:\\Users\\Poseidon\\Documents\\Projects\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj",
         "projectName": "ServerWithGUI",
-        "projectPath": "C:\\Users\\ciaro\\source\\repos\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj",
-        "packagesPath": "C:\\Users\\ciaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ciaro\\source\\repos\\ServerWithGUI\\ServerWithGUI\\obj\\",
+        "projectPath": "C:\\Users\\Poseidon\\Documents\\Projects\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj",
+        "packagesPath": "C:\\Users\\Poseidon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Poseidon\\Documents\\Projects\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ciaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Poseidon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
