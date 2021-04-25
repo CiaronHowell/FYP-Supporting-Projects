@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocketClient", "SocketClient\SocketClient.csproj", "{90205C2C-9AF0-4445-8597-247DF6D4F58A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialClient", "SerialClient\SerialClient.csproj", "{23DAA636-CF31-4DBC-B6EA-76F5A56B07A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90205C2C-9AF0-4445-8597-247DF6D4F58A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90205C2C-9AF0-4445-8597-247DF6D4F58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90205C2C-9AF0-4445-8597-247DF6D4F58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90205C2C-9AF0-4445-8597-247DF6D4F58A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23DAA636-CF31-4DBC-B6EA-76F5A56B07A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23DAA636-CF31-4DBC-B6EA-76F5A56B07A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23DAA636-CF31-4DBC-B6EA-76F5A56B07A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23DAA636-CF31-4DBC-B6EA-76F5A56B07A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02117CFB-06DC-4139-ACB4-8C6B5DCD42CE}
+	EndGlobalSection
+EndGlobal

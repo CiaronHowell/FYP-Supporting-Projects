@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ServerWithGUI
@@ -16,6 +17,8 @@ namespace ServerWithGUI
         public int Port { get; } = 11000;
 
         public event ReceivedMessageHandler ReceivedMessage;
+
+        private ManualResetEvent allDone = new ManualResetEvent(false);
 
         public ServerSocket()
         {
@@ -35,22 +38,28 @@ namespace ServerWithGUI
 
             server.Listen(5);
 
-            //while (true)
-            //{
-            Debug.WriteLine("Waiting for connection");
+            while (true)
+            {
+                allDone.Reset();
+
+                Debug.WriteLine("Waiting for connection");
                 server.BeginAccept(
                     new AsyncCallback(ConnectionCallback), 
                     server);
-            //}
+
+                allDone.WaitOne();
+            }
         }
 
         public void ConnectionCallback(IAsyncResult connection)
         {
+            allDone.Set();
+
             Socket server = (Socket)connection.AsyncState;
             Socket connectionHandler = server.EndAccept(connection);
 
             StateObject state = new();
-            state.workSocket = server;
+            state.workSocket = connectionHandler;
 
             connectionHandler.BeginReceive(
                 state.buffer, 
@@ -74,6 +83,13 @@ namespace ServerWithGUI
                 OnMessageReceived(state.sb.ToString());
             }
 
+            connectionHandler.BeginReceive(
+                state.buffer,
+                0,
+                StateObject.BufferSize,
+                0,
+                new AsyncCallback(GetMessageCallback),
+                state);
         }
 
         private void OnMessageReceived(string message)

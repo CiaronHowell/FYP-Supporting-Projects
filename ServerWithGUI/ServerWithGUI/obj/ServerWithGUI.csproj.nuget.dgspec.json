@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Poseidon\\Documents\\Projects\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj": {}
+    "C:\\Users\\ciaro\\source\\repos\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Poseidon\\Documents\\Projects\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj": {
+    "C:\\Users\\ciaro\\source\\repos\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Poseidon\\Documents\\Projects\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj",
+        "projectUniqueName": "C:\\Users\\ciaro\\source\\repos\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj",
         "projectName": "ServerWithGUI",
-        "projectPath": "C:\\Users\\Poseidon\\Documents\\Projects\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj",
-        "packagesPath": "C:\\Users\\Poseidon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Poseidon\\Documents\\Projects\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\obj\\",
+        "projectPath": "C:\\Users\\ciaro\\source\\repos\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\ServerWithGUI.csproj",
+        "packagesPath": "C:\\Users\\ciaro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ciaro\\source\\repos\\FYP-Supporting-Projects\\ServerWithGUI\\ServerWithGUI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Poseidon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ciaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +42,12 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
